@@ -21,5 +21,18 @@ header img{
     background: var(--cor-fundo2);
 }
 .accordion-button{
+    background: var(--cor-fundo);
+}
+.accordion-button.collapsed{
     background: var(--cor-mule);
+}
+.accordion-button .titulo{
+    color: var(--cor-mule);
+    
+}
+.accordion-button.collapsed .titulo{
+    color: var(--cor-fundo);
+}
+.ingredientes{
+    color: var(--cor-mule);
 }
