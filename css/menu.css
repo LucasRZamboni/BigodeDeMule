@@ -1,0 +1,25 @@
+@import url("rootVariaveis.css");
+body{
+    background-color: var(--cor-fundo);
+}
+.container{
+    background-color: var(--cor-fundo);
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin: 20px 0;
+}
+header img{
+    width: 300px;
+
+}
+.accordion-item{
+    background: var(--cor-fundo2);
+}
+.accordion-button{
+    background: var(--cor-mule);
+}

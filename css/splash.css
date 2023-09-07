@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap");
+@import url("rootVariaveis.css");
+
+/* ------------------------------ */
+body {
+  background: var(--cor-fundo);
+}
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--cor-fundo2);
+  transition: 1s;
+}
+.logo-header {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  position: absolute;
+  display: inline-block;
+  bottom: -20px;
+  left: -30px;
+  opacity: 0;
+}
+.logo img {
+  width: 200px;
+}
+.logo .bigode {
+  position: absolute;
+  bottom: 45px;
+  z-index: 10000;
+  left: 15px;
+}
+.logo .mula2 {
+  width: 90px;
+  position: absolute;
+  bottom: -20px;
+  z-index: -1;
+  left: -79px;
+}
+.logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+.titulo-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.titulo-button img {
+  width: 300px;
+  position: absolute;
+  bottom: 150px;
+}
+.titulo-button h2 {
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive;
+  color: var(--cor-bigode);
+}
+.titulo-button a {
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--cor-bigode);
+  border: 2px solid var(--cor-mule);
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: .1s;
+  background-color: var(--cor-fundo);
+}
+.titulo-button a:hover{
+    color: var(--cor-mule);
+    border-color: var(--cor-bigode);
+    background-color: var(--cor-fundo2);
+}
