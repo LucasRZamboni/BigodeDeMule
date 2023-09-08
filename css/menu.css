@@ -48,6 +48,10 @@ header{
     margin-top: 10px;
     background: var(--cor-mule);
 }
+.preco{
+    color: var(--cor-fundo)
+    font-size: 20px;
+}
 footer{
     height: 50px;
     width: 100%;
