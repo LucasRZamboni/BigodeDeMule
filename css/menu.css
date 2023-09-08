@@ -1,9 +1,11 @@
 @import url("rootVariaveis.css");
 body{
     background-color: var(--cor-fundo);
+    min-height: 100vh;
 }
 .container{
     background-color: var(--cor-fundo);
+    min-height: 100vh;
 }
 header{
     width: 100%;
@@ -11,28 +13,52 @@ header{
     align-items: center;
     justify-content: center;
     height: fit-content;
-    margin: 20px 0;
-}
-header img{
-    width: 300px;
-
-}
-.accordion-item{
-    background: var(--cor-fundo2);
-}
-.accordion-button{
-    background: var(--cor-fundo);
-}
-.accordion-button.collapsed{
-    background: var(--cor-mule);
-}
-.accordion-button .titulo{
-    color: var(--cor-mule);
     
 }
-.accordion-button.collapsed .titulo{
+.container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0;
+}
+.logoImagem{
+    width: 300px;
+}
+.accordion-item{
+    background: var(--cor-fundo);
+    margin: 10px 0;
+}
+.accordion-button[aria-expanded="false"]{
+    background: var(--cor-mule);
     color: var(--cor-fundo);
+}
+.accordion-button[aria-expanded="true"]{
+    background: var(--cor-fundo2);
+    color: var(--cor-mule);
 }
 .ingredientes{
     color: var(--cor-mule);
+}
+.list-group-item{
+    color: black;
+}
+.card-footer{
+    margin-top: 10px;
+    background: var(--cor-mule);
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background: var(--cor-mule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-fundo);
+}
+.voltar{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
 }
