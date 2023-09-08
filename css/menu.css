@@ -49,8 +49,9 @@ header{
     background: var(--cor-mule);
 }
 .preco{
-    color: var(--cor-fundo)
-    font-size: 20px;
+    color: var(--cor-fundo);
+    font-size: 25px;
+    text-shadow: 0 0 8px black;
 }
 footer{
     height: 50px;
