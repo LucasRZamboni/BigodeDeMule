@@ -85,9 +85,21 @@ footer{
 }
 
 .minicards .card{
-    min-height: 390px;
+    height: 320px;
     border: 2px solid var(--cor-fundo2);
     width: 45%;
+}
+.minicards-body,
+.minicards-body-qtd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 120px;
+    margin: 5px 0;
+}
+.minicards-body-qtd{
+    height: 80px;
 }
 .minicards img{
     min-width: 100px;
@@ -114,6 +126,6 @@ footer{
     border-radius: 50%;
     background: var(--cor-fundo2);
 }
-.titulo2{
-    color: var(--cor-bigode);
-}
+/* .titulo2{
+    color: rgb(255, 255, 255);
+} */
