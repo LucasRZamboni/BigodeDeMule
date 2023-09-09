@@ -24,11 +24,13 @@ header{
     margin: 20px 0;
 }
 .logoImagem{
-    width: 300px;
+    width: 250px;
 }
 .accordion-item{
     background: var(--cor-fundo);
-    margin: 10px 0;
+    margin: 5px 0;
+    max-width: 100%;
+    width: 100%;
 }
 .accordion-button[aria-expanded="false"]{
     background: var(--cor-mule);
@@ -66,4 +68,52 @@ footer{
     position: fixed;
     bottom: 15px;
     right: 15px;
+    z-index: 10000;
+}
+.minicards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+.accordion-item,
+.accordion-body,
+.card{
+    border: 1px solid var(--cor-fundo2);
+}
+
+.minicards .card{
+    min-height: 390px;
+    border: 2px solid var(--cor-fundo2);
+    width: 45%;
+}
+.minicards img{
+    min-width: 100px;
+    max-width: 100%;
+}
+.minititulo{
+    font-size: 15px;
+    background: var(--cor-mule);
+    color: var(--cor-fundo);
+}
+.minipreco{
+    color: var(--cor-fundo);
+    font-size: 20px;
+    text-shadow: 0 0 8px black;
+}
+.accordion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.divisor{
+    width: 90%;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--cor-fundo2);
+}
+.titulo2{
+    color: var(--cor-bigode);
 }
